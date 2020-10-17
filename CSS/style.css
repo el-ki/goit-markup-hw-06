@@ -99,9 +99,9 @@ img {
   height: 18px;
 }
 
-/* ========index.html========= */
+/* ========= index.html ========= */
 
-/* HEADER */
+/* ========= HEADER ========= */
 
 .header .container {
   display: flex;
@@ -222,8 +222,8 @@ img {
 .address-tel:hover .address-mail-svg {
   fill: var(--accent-color);
 }
-
-/* HERO */
+/* ========= END HEADER ========= */
+/* ========= HERO ========= */
 .hero {
   margin: 0 auto;
   max-width: 1600px;
@@ -254,7 +254,8 @@ img {
   margin-right: auto;
 }
 
-.modal-btn {
+.modal-btn,
+.modal-form-btn {
   font-style: normal;
   font-family: var(--main-font);
   font-weight: 700;
@@ -266,16 +267,22 @@ img {
   letter-spacing: 0.06em;
   color: var(--color-dark-theme);
   background: var(--accent-color);
-  min-width: 200px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 32px;
   margin: 0 auto;
   cursor: pointer;
+  border-style: none;
 }
 
-/* ADVANTAGES */
+.modal-btn:focus,
+.modal-form-btn:focus {
+  outline: none;
+}
+
+/* ========= END HERO ========= */
+/* ========= ADVANTAGES ========= */
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -341,8 +348,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* ABOUT US */
+/* ========= END ADVANTAGES ========= */
+/* ========= ABOUT US ========= */
 
 .about {
   padding-bottom: 94px;
@@ -394,8 +401,8 @@ img {
 .about-item:not(:last-child) {
   margin-right: 30px;
 }
-
-/* OUR TEAM */
+/* ========= END ABOUT US ========= */
+/* ========= OUR TEAM ========= */
 .team {
   background: var(--team-background-color);
   padding-top: 94px;
@@ -478,8 +485,8 @@ img {
 .social-list-link:hover {
   background-color: var(--accent-color);
 }
-
-/* CLIENTS */
+/* ========= END OUR TEAM ========= */
+/* ========= CLIENTS ========= */
 .clients {
   padding-top: 94px;
 }
@@ -516,7 +523,9 @@ img {
   fill: var(--social-link-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* FOOTER */
+
+/* ========= END CLIENTS ========= */
+/* ========= FOOTER ========= */
 .footer {
   background: var(--background-color);
   padding-top: 60px;
@@ -602,13 +611,87 @@ img {
 .social-dark-theme {
   fill: var(--color-dark-theme);
 }
-/* portfolio.html */
-/* HEADER */
+
+/* ========= END FOOTER ========= */
+
+/* ========= MODAL FORM ========= */
+.modal-form {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-form-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  margin-bottom: 12px;
+}
+
+.modal-form-field {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.167px;
+  letter-spacing: 0.01em;
+  color: var(--main-color);
+}
+
+.modal-form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  padding-left: 42px;
+}
+
+.modal-form-input:focus,
+.modal-form-message:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+.modal-form-message {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+.modal-form-input:focus + .modal-form-svg-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-field-wrapper {
+  display: block;
+  position: relative;
+}
+
+.modal-form-svg-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+/* ========= ENF MODAL FORM ========= */
+
+/* ========= portfolio.html ========= */
+/* ========= HEADER ========= */
 
 .header-border {
   border: 1px solid #ececec;
 }
-/* GALERY */
+/* ========= END HEADER ========= */
+/* ========= GALERY ========= */
 
 .galery {
   padding: 94px 0;
@@ -636,8 +719,13 @@ img {
   border: transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
+}
+
+.galery-button {
+  outline: none;
 }
 
 .galery-list {
@@ -743,3 +831,4 @@ img {
   color: var(--color-dark-theme);
   opacity: 0;
 }
+/* ========= END GALERY ========= */
