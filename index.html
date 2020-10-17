@@ -70,7 +70,7 @@
       <!-- ADVANTAGES -->
       <section class="advantages">
         <div class="container">
-          <h2 class="advantages-title" hidden>Преимущества вебстудии</h2>
+          <h2 class="advantages-title visually-hidden">Преимущества вебстудии</h2>
           <ul class="advantages-list list">
             <li class="advantages-item icon-antenna">
               <h3 class="advantages-title">Внимание к деталям</h3>
@@ -473,10 +473,21 @@
             </svg>
           </span>
           </label>
+          
           <label class="modal-form-field">Комментарий
-            <textarea name="" id="" class="modal-form-message"></textarea>
+            <span class="modal-form-field-wrapper">
+              <textarea name="comment" class="modal-form-message"></textarea>
+          </span>
           </label>
-            <input type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy">
+          <div class="checkbox-wrap">
+
+            <input type="checkbox" name="user-policy" value="accept-policy" id="check-policy" class="modal-form-policy visually-hidden">
+            <label for="check-policy" class="modal-form-policy-label">Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a></label>
+              <svg class="modal-form-field-icon">
+              <use href="./images/sprite.svg#icon-icon-check"></use>
+              
+            </svg>
+          </div>
             <button type="submit" class="modal-form-btn">Отправить</button>
           </form>
         </div>
