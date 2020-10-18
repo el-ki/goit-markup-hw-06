@@ -763,6 +763,9 @@ img {
   width: 18px;
   height: 18px;
 }
+.modal-form-svg-icon:hover {
+  cursor: pointer;
+}
 
 .modal-form-policy-label {
   font-size: 14px;
