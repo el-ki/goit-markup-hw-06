@@ -566,6 +566,7 @@ img {
 .footer-tel:not(:last-child) {
   display: block;
   margin-bottom: 10px;
+  width: 231px;
 }
 
 .footer-address-link {
@@ -604,13 +605,14 @@ img {
   padding-bottom: 60px;
 }
 
-.contacts-container {
-  margin-right: 70px;
-}
+/* .contacts-container {
+  margin-right: 68px;
+} */
 
 .social-container {
   width: 206px;
   height: 80px;
+  margin-left: 70px;
 }
 .social-text {
   font-weight: bold;
@@ -629,15 +631,9 @@ img {
 .social-dark-theme {
   fill: var(--color-dark-theme);
 }
-/* 
-.form-container {
-  display: flex;
-} */
 
 .form-container {
   margin-left: 109px;
-  /* display: flex;
-  flex-wrap: wrap; */
 }
 
 .form-container-text {
@@ -664,6 +660,9 @@ img {
   border-radius: 4px;
   margin-right: 12px;
   padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 .form-container-input:focus {
   outline: none;
